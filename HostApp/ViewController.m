@@ -22,6 +22,7 @@
     [super viewDidLoad];
    // UITableView.dataSource = self;
     [self arraySetup];
+    // self setup for mutable array
 }
 
 -(void)arraySetup {
