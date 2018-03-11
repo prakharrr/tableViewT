@@ -25,7 +25,7 @@
 }
 
 -(void)arraySetup {
-    imgArray = [NSMutableArray arrayWithArray:@[@"Image1",@"Image2",@"Image3",@"Image4"]];
+    imgArray = [NSMutableArray arrayWithArray:@[@"image1",@"image2",@"image3",@"image4"]];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -35,8 +35,12 @@
 
 #pragma mark - UITableViewDataSource
 - (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath { 
-    static NSString *cellID = @"cellReuseIdentifier";
+    static NSString *cellID = @"cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
+    
+    cell.imageView.image = [UIImage imageNamed:imgArray[indexPath.row]];
+    cell.textLabel.text = imgArray[indexPath.row];
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%d", (int)indexPath.row + 1]; 
     return cell;
 }
 
