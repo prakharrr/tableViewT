@@ -13,6 +13,10 @@
 		DF7845812055B8DB00E488BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF7845802055B8DB00E488BC /* Assets.xcassets */; };
 		DF7845842055B8DB00E488BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF7845822055B8DB00E488BC /* LaunchScreen.storyboard */; };
 		DF7845872055B8DB00E488BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DF7845862055B8DB00E488BC /* main.m */; };
+		DF9A6F352055C3D000756380 /* image4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF9A6F312055C3D000756380 /* image4.jpg */; };
+		DF9A6F362055C3D000756380 /* image3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF9A6F322055C3D000756380 /* image3.jpg */; };
+		DF9A6F372055C3D000756380 /* image2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF9A6F332055C3D000756380 /* image2.jpg */; };
+		DF9A6F382055C3D000756380 /* image1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF9A6F342055C3D000756380 /* image1.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		DF7845832055B8DB00E488BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DF7845852055B8DB00E488BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DF7845862055B8DB00E488BC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DF9A6F312055C3D000756380 /* image4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image4.jpg; sourceTree = SOURCE_ROOT; };
+		DF9A6F322055C3D000756380 /* image3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image3.jpg; sourceTree = SOURCE_ROOT; };
+		DF9A6F332055C3D000756380 /* image2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image2.jpg; sourceTree = SOURCE_ROOT; };
+		DF9A6F342055C3D000756380 /* image1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image1.jpg; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,7 @@
 		DF7845762055B8DB00E488BC /* HostApp */ = {
 			isa = PBXGroup;
 			children = (
+				DF9A6F302055C3BD00756380 /* New Group */,
 				DF7845772055B8DB00E488BC /* AppDelegate.h */,
 				DF7845782055B8DB00E488BC /* AppDelegate.m */,
 				DF78457A2055B8DB00E488BC /* ViewController.h */,
@@ -69,6 +78,17 @@
 				DF7845862055B8DB00E488BC /* main.m */,
 			);
 			path = HostApp;
+			sourceTree = "<group>";
+		};
+		DF9A6F302055C3BD00756380 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				DF9A6F342055C3D000756380 /* image1.jpg */,
+				DF9A6F332055C3D000756380 /* image2.jpg */,
+				DF9A6F322055C3D000756380 /* image3.jpg */,
+				DF9A6F312055C3D000756380 /* image4.jpg */,
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,8 +149,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF9A6F382055C3D000756380 /* image1.jpg in Resources */,
+				DF9A6F352055C3D000756380 /* image4.jpg in Resources */,
+				DF9A6F362055C3D000756380 /* image3.jpg in Resources */,
 				DF7845842055B8DB00E488BC /* LaunchScreen.storyboard in Resources */,
 				DF7845812055B8DB00E488BC /* Assets.xcassets in Resources */,
+				DF9A6F372055C3D000756380 /* image2.jpg in Resources */,
 				DF78457F2055B8DB00E488BC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
