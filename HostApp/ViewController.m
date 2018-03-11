@@ -34,9 +34,15 @@
 }
 
 #pragma mark - UITableViewDataSource
+
+- (NSInteger)tableView:(nonnull UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return imgArray.count;
+}
+
 - (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath { 
     static NSString *cellID = @"cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
+    
     
     cell.imageView.image = [UIImage imageNamed:imgArray[indexPath.row]];
     cell.textLabel.text = imgArray[indexPath.row];
@@ -44,9 +50,6 @@
     return cell;
 }
 
-- (NSInteger)tableView:(nonnull UITableView *)tableView numberOfRowsInSection:(NSInteger)section { 
-    return imgArray.count;
-}
 
 
 @end
