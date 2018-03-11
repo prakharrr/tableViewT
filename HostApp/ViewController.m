@@ -16,9 +16,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+   // UITableView.dataSource = self;
+    [self arraySetup];
 }
 
+-(void)arraySetup {
+    NSArray *imgArray = [NSMutableArray arrayWithArray:@[@"Image1",@"Image2",@"Image3",@"Image4"]];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
